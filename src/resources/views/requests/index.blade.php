@@ -30,7 +30,7 @@
                             <td v-text="request.method"></td>
                             <td v-text="request.created_at"></td>
                             <td><strong v-text="Math.floor((request.end_time - request.start_time) * 1000) + ' ms'"></strong></td>
-                            <td><strong :title="request.uri" v-text="truncate(request.uri, 70)"></strong></td>
+                            <td><strong :title="request.uri" v-text="truncate(request.uri, 30)"></strong></td>
                             <td v-text="request.ip"></td>
                             <td><a :href="requestsRoute + '/' + request.id" class="btn btn-secondary btn-sm">View Details</a></td>
                         </tr>
